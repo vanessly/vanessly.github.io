@@ -1,19 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Raleway:wght@400;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400&family=Space+Mono&display=swap');
 @layer base {
     body {
-        @apply font-[Inter];
+        @apply font-[Outfit];
     }
     li {
         @apply px-4;
         @apply cursor-pointer;
     }
     h1 {
-        @apply font-[Raleway]
+        @apply font-mono;
     }
     h2 {
-        @apply font-[Raleway]
+        @apply font-mono;
     }
 }

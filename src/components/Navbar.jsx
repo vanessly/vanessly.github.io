@@ -6,15 +6,15 @@ const Navbar = () => {
   const [nav, setNav] = useState(false)
   const handleClick = () => setNav(!nav)
   return (
-    <div className='fixed w-full h-14 flex justify-end items-center px-4  text-gray-300 bg-[#0D1117]'>
+    <div className='font-mono fixed gap-x-2 w-full h-14 flex justify-end items-center bg-[#F0EDED] px-4  text-black'>
       <div>
         {/* Menu */}
         <ul className='hidden md:flex'>
-          <li>Home</li>
-          <li>About</li>
-          <li>Skills</li>
-          <li>Projects</li>
-          <li>Contact</li>
+          <li className=''>Home</li>
+          <li className=''>About</li>
+          <li className=''>Skills</li>
+          <li className=''>Work</li>
+          <li className=''>Contact</li>
         </ul>
       </div>
       {/* Three Bars */}
@@ -22,14 +22,14 @@ const Navbar = () => {
         {!nav ? <FaBars /> : <FaTimes />}
       </div>
       {/* Mobile Menu */}
-      <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#0D1117] flex flex-col justify-center items-center'}>
+      <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#F0EDED] flex flex-col justify-center items-center'}>
           <li className='py-6 text-4xl'>Home</li>
           <li className='py-6 text-4xl'>About</li>
           <li className='py-6 text-4xl'>Skills</li>
           <li className='py-6 text-4xl'>Projects</li>
           <li className='py-6 text-4xl'>Contact</li>
       </ul>
-      {/* Social Icons */}
+      {/* Social Icons
       <div className="top-[40%] hidden lg:flex fixed flex-col left-0">
         <ul>
           <li className='rounded-r-full w-[8rem] h-[2rem] flex justify-between items-center ml-[-5rem] hover:ml-[0] duration-300 bg-[#1D4E89]'>
@@ -45,7 +45,7 @@ const Navbar = () => {
             <a className='text-sm flex justify-between items-center w-full text-gray-300' href="https://drive.google.com/file/d/1PhYoBdaC-OZB7DgX7WlWY7dvNfpFgIPo/view?usp=sharing">Resume <BsFillFileEarmarkTextFill size={20}/></a>
           </li>
         </ul>
-      </div>
+      </div> */}
       </div>
   )
 }
